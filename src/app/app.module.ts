@@ -11,21 +11,19 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { AddressFormComponent } from './address-form/address-form.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
 import { ReactiveFormsModule } from '@angular/forms';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatTreeModule } from '@angular/material/tree';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +41,8 @@ import { MatMenuModule } from '@angular/material/menu';
     MatCardModule,
     ReactiveFormsModule,
     MatGridListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
